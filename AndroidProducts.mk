@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/infinity_avicii.mk
+    $(LOCAL_DIR)/custom_avicii.mk
 
 COMMON_LUNCH_CHOICES := \
-    infinity_avicii-eng \
-    infinity_avicii-user \
-    infinity_avicii-userdebug
+    custom_avicii-eng \
+    custom_avicii-user \
+    custom_avicii-userdebug

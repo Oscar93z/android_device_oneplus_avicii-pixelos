@@ -12,22 +12,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from avicii device
 $(call inherit-product, device/oneplus/avicii/device.mk)
 
-# Inherit some common Infinity-X stuff.
-$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+# Inherit some common PixelOS stuff.
+$(call inherit-product, vendor/custom/config/common_full_phone.mk)
 
-# Infinity-X Specific Flags
-INFINITY_MAINTAINER := sreeshankark
-INFINITY_BUILD_TYPE := OFFICIAL
-TARGET_HAS_UDFPS := true
+# Environment Flags
+TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_BOOT_ANIMATION_RES := 1080
-ifeq ($(WITH_GAPPS), true)
-TARGET_BUILD_GOOGLE_TELEPHONY := true
-TARGET_EXCLUDES_AUDIOFX := true
-TARGET_EXCLUDES_VIA := true
-endif
 
-PRODUCT_NAME := infinity_avicii
+PRODUCT_NAME := custom_avicii
 PRODUCT_DEVICE := avicii
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
