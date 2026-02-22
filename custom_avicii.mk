@@ -34,3 +34,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=avicii \
     SystemName=Nord \
     SystemDevice=avicii
+
+-include vendor/lineage-priv/keys/keys.mk
